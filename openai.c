@@ -1,7 +1,5 @@
 #include "openai.h"
 
-#if defined(AI_MODE) && (AI_MODE == OPENAI)
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -383,4 +381,3 @@ const char *ai_openai_strerror(ai_openai_status status) {
     }
 }
 
-#endif /* AI_MODE == OPENAI */

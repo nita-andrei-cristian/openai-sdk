@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "openai.h"
 
-#if defined(AI_MODE) && (AI_MODE == OPENAI)
-
 int main(void) {
     const char *json =
         "{"
@@ -43,12 +41,3 @@ int main(void) {
     ai_openai_response_free(&fetched);
     return 0;
 }
-
-#else
-
-int main(void) {
-    fprintf(stderr, "This example only builds when AI_MODE == OPENAI\n");
-    return 1;
-}
-
-#endif

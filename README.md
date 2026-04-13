@@ -18,13 +18,13 @@ This works for me, but I do not claim it's robust neither secure.
 export OPENAI_API_KEY="sk-xxx"
 ```
 
- `3` Define AI_MODE to "OPENAI". Example compilation with gcc:.
+ `3` Use it. Example compilation with gcc:.
 
 ```bash
-gcc -DAI_MODE=OPENAI example.c ai_openai.c -lssl -lcrypto -o example
+gcc example.c ai_openai.c -lssl -lcrypto -o example
 ```
 
- `4` Use it. See `example.c` for inspiration
+ `4` Dive deeper. See `example.c` for inspiration.
 
 ## License
 GNU PUBLIC LICENSE

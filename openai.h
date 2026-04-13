@@ -3,10 +3,6 @@
 
 #include <stddef.h>
 
-#define OPENAI 1
-
-#if defined(AI_MODE) && (AI_MODE == OPENAI)
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -55,5 +51,4 @@ const char *ai_openai_strerror(ai_openai_status status);
 }
 #endif
 
-#endif /* AI_MODE == OPENAI */
 #endif /* AI_OPENAI_H */
